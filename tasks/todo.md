@@ -20,3 +20,9 @@
 
 ## Verification
 - [x] php artisan test, tsc, vite build
+
+## Deployment
+- [x] backend/Dockerfile, .dockerignore, docker/start.sh (migrate, seed, cache, apache on $PORT)
+- [x] render.yaml (blueprint), frontend/vercel.json
+- [x] Built image and tested in production mode: health, API, CORS, contact
+- [ ] User: push to GitHub, create Render and Vercel projects, set APP_KEY, APP_URL, FRONTEND_URL, VITE_API_URL
