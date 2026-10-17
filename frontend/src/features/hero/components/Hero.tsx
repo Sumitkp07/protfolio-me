@@ -83,7 +83,7 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="mt-14 grid max-w-xl grid-cols-3 gap-6"
+            className="mt-14 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-4"
           >
             {HERO_FACTS.map((fact) => (
               <div key={fact.label}>

@@ -28,7 +28,7 @@ export const ContactForm = () => {
       <button
         type="submit"
         disabled={isSending}
-        className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white shadow-lg shadow-accent/30 transition-all hover:-translate-y-0.5 disabled:opacity-60"
+        className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-medium text-white shadow-lg shadow-accent/30 transition-all hover:-translate-y-0.5 disabled:opacity-60"
       >
         {isSending ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
         {isSending ? 'Sending' : 'Send message'}

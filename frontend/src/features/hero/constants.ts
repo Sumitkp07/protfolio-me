@@ -1,5 +1,6 @@
 export const HERO_FACTS = [
-  { value: '8.4M+', label: 'Records processed in ETL' },
-  { value: '~6 min', label: 'Pipeline run on 50+ GB' },
-  { value: '70+', label: 'Email templates migrated' },
+  { value: '2+', label: 'Years building production apps' },
+  { value: '7', label: 'Projects shipped' },
+  { value: '6', label: 'Live production sites' },
+  { value: '10+', label: 'Third-party and AI APIs integrated' },
 ] as const

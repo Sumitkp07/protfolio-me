@@ -14,6 +14,7 @@ export default {
         muted: token('muted'),
         line: token('line'),
         accent: token('accent'),
+        brand: token('brand'),
         glow: token('glow'),
       },
       fontFamily: {
