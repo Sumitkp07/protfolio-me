@@ -34,7 +34,7 @@ export const Projects = () => {
             aria-pressed={filter === item.id}
             className={cn(
               'rounded-full px-4 py-2 text-sm transition-colors',
-              filter === item.id ? 'bg-accent text-white' : 'glass text-muted hover:text-ink',
+              filter === item.id ? 'bg-brand text-white' : 'glass text-muted hover:text-ink',
             )}
           >
             {item.label}

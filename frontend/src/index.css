@@ -3,23 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --base: 248 248 252;
+  --base: 244 248 254;
   --surface: 255 255 255;
-  --ink: 17 17 27;
-  --muted: 98 102 122;
-  --line: 17 17 27;
-  --accent: 109 40 217;
-  --glow: 8 145 178;
+  --ink: 11 18 32;
+  --muted: 81 98 125;
+  --line: 11 18 32;
+  --accent: 29 78 216;
+  --brand: 29 78 216;
+  --glow: 15 118 110;
 }
 
 .dark {
-  --base: 9 9 15;
-  --surface: 20 20 31;
-  --ink: 244 244 250;
-  --muted: 154 158 180;
+  --base: 7 13 26;
+  --surface: 15 26 46;
+  --ink: 234 242 255;
+  --muted: 143 163 192;
   --line: 255 255 255;
-  --accent: 139 92 246;
-  --glow: 34 211 238;
+  --accent: 59 130 246;
+  --brand: 37 99 235;
+  --glow: 45 212 191;
 }
 
 @layer base {

@@ -26,3 +26,9 @@
 - [x] render.yaml (blueprint), frontend/vercel.json
 - [x] Built image and tested in production mode: health, API, CORS, contact
 - [ ] User: push to GitHub, create Render and Vercel projects, set APP_KEY, APP_URL, FRONTEND_URL, VITE_API_URL
+
+## Ocean theme, skill icons, resume sync
+- [x] Ocean palette (dark and light) with a separate brand token for filled buttons
+- [x] Skill icons via simple-icons with lucide fallbacks
+- [x] Seeders synced with resume (Interpersonal skills, project bullets, ongoing markers)
+- [x] Verified in Chrome: dark and light

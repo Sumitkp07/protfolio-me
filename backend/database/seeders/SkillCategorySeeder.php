@@ -16,6 +16,7 @@ class SkillCategorySeeder extends Seeder
             'Testing' => ['Postman', 'Mailtrap'],
             'Working Knowledge' => ['Vue.js', 'Python/FastAPI', 'DuckDB', 'Supabase'],
             'Integrations' => ['OpenAI GPT', 'Gemini', 'Stripe', 'Braintree', 'Zoho CRM', 'SendGrid', 'YouTube/Facebook/Instagram APIs'],
+            'Interpersonal' => ['Mentoring', 'Communication', 'Team collaboration', 'Problem-solving', 'Ownership'],
         ];
 
         $order = 0;
