@@ -11,7 +11,7 @@ export const SpotlightCard = ({ className, onMouseMove, ...props }: ComponentPro
 
   return (
     <div
-      className={cn('spotlight glass rounded-3xl transition-colors hover:border-accent/40', className)}
+      className={cn('spotlight glass rounded-3xl transition-all duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-[0_24px_48px_-20px_rgb(var(--accent)/0.55)]', className)}
       onMouseMove={handleMouseMove}
       {...props}
     />

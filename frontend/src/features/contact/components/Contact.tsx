@@ -15,8 +15,8 @@ interface ContactLinkProps {
 
 const ContactLink = ({ icon, label, href }: ContactLinkProps) => {
   const content = (
-    <span className="flex items-center gap-3 text-muted transition-colors group-hover:text-ink">
-      <span className="text-accent">{icon}</span>
+    <span className="flex items-center gap-3 text-onbrand/75 transition-colors group-hover:text-onbrand">
+      <span className="text-onbrand">{icon}</span>
       {label}
     </span>
   )
@@ -44,7 +44,7 @@ export const Contact = () => {
     >
       <div className="grid gap-5 lg:grid-cols-[1fr_1.3fr]">
         <Reveal>
-          <SpotlightCard className="h-full space-y-5 p-8">
+          <div className="h-full space-y-5 rounded-3xl bg-ink p-8 shadow-[0_24px_48px_-24px_rgb(var(--line)/0.5)]">
             <ContactLink icon={<Mail size={18} />} label={profile.email} href={`mailto:${profile.email}`} />
             {profile.phone && (
               <ContactLink icon={<Phone size={18} />} label={profile.phone} href={`tel:${profile.phone.replace(/\s/g, '')}`} />
@@ -56,7 +56,7 @@ export const Contact = () => {
             {profile.linkedin_url && (
               <ContactLink icon={<LinkedinIcon size={18} />} label="LinkedIn" href={profile.linkedin_url} />
             )}
-          </SpotlightCard>
+          </div>
         </Reveal>
 
         <Reveal delay={0.1}>

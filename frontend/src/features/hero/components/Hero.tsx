@@ -87,7 +87,7 @@ export const Hero = () => {
           >
             {HERO_FACTS.map((fact) => (
               <div key={fact.label}>
-                <dt className="font-display text-3xl font-bold">{fact.value}</dt>
+                <dt className="font-display text-4xl font-bold text-accent">{fact.value}</dt>
                 <dd className="mt-1 text-xs text-muted">{fact.label}</dd>
               </div>
             ))}

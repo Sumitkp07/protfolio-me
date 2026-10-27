@@ -36,7 +36,7 @@ export const About = () => {
           <SpotlightCard className="flex h-full flex-col justify-between p-8">
             <Briefcase className="text-accent" />
             <div>
-              <p className="font-display text-5xl font-bold">{profile.years_experience}+</p>
+              <p className="font-display text-6xl font-bold text-accent">{profile.years_experience}+</p>
               <p className="mt-1 text-sm text-muted">Years at Duskbyte, trainee to full stack developer</p>
             </div>
           </SpotlightCard>

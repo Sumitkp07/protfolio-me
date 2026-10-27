@@ -4,26 +4,26 @@
 
 :root {
   --base: 246 241 231;
-  --surface: 252 249 242;
+  --surface: 255 253 248;
   --ink: 17 17 17;
   --muted: 94 90 82;
   --line: 17 17 17;
-  --accent: 17 17 17;
+  --accent: 194 65 12;
   --brand: 17 17 17;
   --on-brand: 246 241 231;
-  --glow: 111 100 81;
+  --glow: 217 119 6;
 }
 
 .dark {
-  --base: 14 13 11;
-  --surface: 26 24 20;
+  --base: 12 11 9;
+  --surface: 28 25 21;
   --ink: 244 238 223;
-  --muted: 163 156 139;
+  --muted: 168 160 142;
   --line: 244 238 223;
-  --accent: 244 238 223;
+  --accent: 251 146 60;
   --brand: 244 238 223;
-  --on-brand: 14 13 11;
-  --glow: 207 195 165;
+  --on-brand: 12 11 9;
+  --glow: 251 191 36;
 }
 
 @layer base {
@@ -47,7 +47,12 @@
 
 @layer components {
   .glass {
-    @apply border border-line/10 bg-surface/60 backdrop-blur-xl;
+    border: 1px solid rgb(var(--line) / 0.14);
+    background: rgb(var(--surface) / 0.85);
+    backdrop-filter: blur(16px);
+    box-shadow:
+      0 1px 0 rgb(var(--line) / 0.05),
+      0 18px 40px -22px rgb(var(--line) / 0.35);
   }
 
   .gradient-text {
