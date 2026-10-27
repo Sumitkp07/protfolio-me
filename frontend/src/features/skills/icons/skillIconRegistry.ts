@@ -78,6 +78,7 @@ const registry: Record<string, SkillIconSource> = {
   mailtrap: brand(siMailtrap),
   'vue.js': brand(siVuedotjs),
   'python/fastapi': brand(siFastapi),
+  'python/fastapi (learning)': brand(siFastapi),
   python: brand(siPython),
   duckdb: brand(siDuckdb),
   supabase: brand(siSupabase),

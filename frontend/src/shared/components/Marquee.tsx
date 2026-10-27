@@ -3,14 +3,15 @@ interface MarqueeProps {
 }
 
 export const Marquee = ({ items }: MarqueeProps) => (
-  <div
-    className="relative overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_12%,black_88%,transparent)]"
-    aria-hidden="true"
-  >
-    <div className="flex w-max animate-marquee gap-10">
+  <div className="overflow-hidden border-y border-line/15 bg-ink py-5" aria-hidden="true">
+    <div className="flex w-max animate-marquee items-center">
       {[...items, ...items].map((item, index) => (
-        <span key={`${item}-${index}`} className="font-display text-2xl font-semibold text-muted/60">
+        <span
+          key={`${item}-${index}`}
+          className="flex items-center gap-10 px-5 font-display text-xl font-semibold uppercase tracking-wide text-onbrand"
+        >
           {item}
+          <span className="text-onbrand/40">&#10022;</span>
         </span>
       ))}
     </div>

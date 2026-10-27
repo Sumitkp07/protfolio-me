@@ -3,25 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --base: 244 248 254;
-  --surface: 255 255 255;
-  --ink: 11 18 32;
-  --muted: 81 98 125;
-  --line: 11 18 32;
-  --accent: 29 78 216;
-  --brand: 29 78 216;
-  --glow: 15 118 110;
+  --base: 246 241 231;
+  --surface: 255 253 248;
+  --ink: 17 17 17;
+  --muted: 94 90 82;
+  --line: 17 17 17;
+  --accent: 194 65 12;
+  --brand: 17 17 17;
+  --on-brand: 246 241 231;
+  --glow: 217 119 6;
 }
 
 .dark {
-  --base: 7 13 26;
-  --surface: 15 26 46;
-  --ink: 234 242 255;
-  --muted: 143 163 192;
-  --line: 255 255 255;
-  --accent: 59 130 246;
-  --brand: 37 99 235;
-  --glow: 45 212 191;
+  --base: 12 11 9;
+  --surface: 28 25 21;
+  --ink: 244 238 223;
+  --muted: 168 160 142;
+  --line: 244 238 223;
+  --accent: 251 146 60;
+  --brand: 244 238 223;
+  --on-brand: 12 11 9;
+  --glow: 251 191 36;
 }
 
 @layer base {
@@ -45,7 +47,12 @@
 
 @layer components {
   .glass {
-    @apply border border-line/10 bg-surface/60 backdrop-blur-xl;
+    border: 1px solid rgb(var(--line) / 0.14);
+    background: rgb(var(--surface) / 0.85);
+    backdrop-filter: blur(16px);
+    box-shadow:
+      0 1px 0 rgb(var(--line) / 0.05),
+      0 18px 40px -22px rgb(var(--line) / 0.35);
   }
 
   .gradient-text {

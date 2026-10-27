@@ -9,7 +9,7 @@ interface ButtonProps extends ComponentPropsWithoutRef<'a'> {
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-brand text-white shadow-lg shadow-accent/30 hover:-translate-y-0.5 hover:shadow-accent/50',
+    'bg-brand text-onbrand shadow-lg shadow-accent/30 hover:-translate-y-0.5 hover:bg-accent hover:shadow-accent/50',
   ghost: 'glass text-ink hover:-translate-y-0.5 hover:border-accent/50',
 }
 

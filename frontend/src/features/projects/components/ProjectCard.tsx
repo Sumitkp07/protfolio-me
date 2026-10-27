@@ -30,7 +30,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             target="_blank"
             rel="noreferrer"
             aria-label={`Open ${project.title}`}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line/10 text-muted transition-all hover:border-accent hover:bg-brand hover:text-white"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line/10 text-muted transition-all hover:border-accent hover:bg-brand hover:text-onbrand"
           >
             <ArrowUpRight size={18} />
           </a>

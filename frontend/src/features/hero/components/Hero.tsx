@@ -8,7 +8,7 @@ import { HERO_FACTS } from '@/features/hero/constants'
 import { CodeCard } from '@/features/hero/components/CodeCard'
 import { useProfile, useSkillCategories } from '@/features/portfolio/hooks/usePortfolioSections'
 
-const heroStack = ['React.js', 'Next.js', 'TypeScript', 'Laravel', 'PostgreSQL', 'Docker']
+const heroStack = ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'REST APIs', 'PostgreSQL']
 
 export const Hero = () => {
   const profile = useProfile()
@@ -87,7 +87,7 @@ export const Hero = () => {
           >
             {HERO_FACTS.map((fact) => (
               <div key={fact.label}>
-                <dt className="font-display text-3xl font-bold">{fact.value}</dt>
+                <dt className="font-display text-4xl font-bold text-accent">{fact.value}</dt>
                 <dd className="mt-1 text-xs text-muted">{fact.label}</dd>
               </div>
             ))}

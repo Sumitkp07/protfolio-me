@@ -8,3 +8,5 @@
 - Brand icons are not in lucide-react (v1+). simple-icons is used for tech logos, with lucide generics as fallback for AWS S3, OpenAI, SendGrid and non-brand skills.
 - Filled buttons need a darker brand color (--brand) than the text accent so white text keeps 4.5:1 contrast.
 - To screenshot scroll-reveal sections, drive Chrome over --remote-debugging-pipe (scratchpad shoot.py) instead of --screenshot.
+- Free Render APIs sleep after 15 minutes and take about a minute to wake. The frontend must never block first paint on the API: ship a data snapshot as initialData and refresh in the background. Refresh it with npm run snapshot after content changes.
+- Color token names must not collide with Tailwind utilities (text-base is a font size). Use text-onbrand for text on filled brand buttons.
