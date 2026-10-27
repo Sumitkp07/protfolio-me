@@ -1,4 +1,3 @@
-import { LoadingScreen } from '@/shared/components/LoadingScreen'
 import { StatusMessage } from '@/shared/components/StatusMessage'
 import { About } from '@/features/about/components/About'
 import { Contact } from '@/features/contact/components/Contact'
@@ -13,15 +12,13 @@ import { Projects } from '@/features/projects/components/Projects'
 import { Skills } from '@/features/skills/components/Skills'
 
 export const PortfolioPage = () => {
-  const { data, isPending, isError } = usePortfolio()
+  const { data } = usePortfolio()
 
-  if (isPending) return <LoadingScreen />
-
-  if (isError || !data.profile) {
+  if (!data.profile) {
     return (
       <StatusMessage
         title="Portfolio unavailable"
-        description="The API could not be reached. Please make sure the backend is running and try again."
+        description="No portfolio data is available right now. Please try again shortly."
       />
     )
   }

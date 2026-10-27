@@ -1,0 +1,290 @@
+{
+  "profile": {
+    "name": "Sumit Kumar",
+    "title": "MERN Stack Developer",
+    "tagline": "I build fast, type-safe React and Next.js applications on top of REST APIs, and ship them to production.",
+    "summary": "MERN-focused Full Stack Developer with about 2 years of experience at Duskbyte, building and deploying production web applications with JavaScript, TypeScript, React.js and Next.js. I design REST APIs and back them with Laravel, PostgreSQL and MySQL, and I have shipped Docker-based deployments, authentication and RBAC, ETL pipelines, and third-party and AI API integrations end to end.",
+    "email": "sumitkp.dev@gmail.com",
+    "phone": "+91 9050755520",
+    "location": "Mohali, Punjab, India",
+    "github_url": "https://github.com/Sumitkp07",
+    "linkedin_url": "https://linkedin.com/in/sumit-kumar06-110386220",
+    "resume_url": null,
+    "years_experience": 2
+  },
+  "experiences": [
+    {
+      "id": 1,
+      "company": "Duskbyte",
+      "role": "Full Stack Developer",
+      "location": "Mohali, Punjab",
+      "started_on": "2024-11-01",
+      "ended_on": null,
+      "is_current": true,
+      "highlights": [
+        "Build and maintain full-stack applications using Laravel, React.js, Next.js (TypeScript), Vue.js, MySQL, PostgreSQL, and REST APIs.",
+        "Dockerize legacy applications and deploy them to Linux production servers over SSH, configuring environments and hosting under the Duskbyte domain.",
+        "Work on a property-tax compensation platform: ETL automation, large-scale data processing, and migration to FastAPI and React.js.",
+        "Mentor 2 trainees on how live projects work and delegate feature work to them on the Workspace platform.",
+        "Evaluate third-party tools, libraries, and architectures against project requirements and recommend options."
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Duskbyte",
+      "role": "Trainee PHP Developer",
+      "location": "Mohali, Punjab",
+      "started_on": "2024-05-01",
+      "ended_on": "2024-11-01",
+      "is_current": false,
+      "highlights": [
+        "Worked on a Buyer Commission project (Laravel, React.js) and a Chrome extension, building and integrating REST APIs.",
+        "Learned how a production application works end to end, from frontend requests through backend APIs to the database."
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Solitaire Infosys Pvt Ltd",
+      "role": "Trainee React Developer",
+      "location": "Mohali, Punjab",
+      "started_on": "2022-09-01",
+      "ended_on": "2023-02-28",
+      "is_current": false,
+      "highlights": [
+        "Built Fitness Freak, a front-end-only React.js website, using hooks, state management, and reusable UI components."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "duskbyte-workspace",
+      "title": "Duskbyte Workspace",
+      "category": "Internal Workspace & Ticketing Platform",
+      "summary": "The internal workspace and ticketing platform the Duskbyte team uses daily to assign and track work.",
+      "highlights": [
+        "Designed and built the platform end to end: architecture, database, backend APIs, frontend, and production deployment.",
+        "Replaced scattered task tracking across chats with centralized ticketing, assignment and status tracking.",
+        "Added ticket status views so team progress is visible at a glance without follow-up messages."
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Laravel",
+        "PostgreSQL"
+      ],
+      "live_url": "https://workspace.duskbyteapps.com",
+      "period": null,
+      "is_featured": true
+    },
+    {
+      "slug": "free-tax-protest",
+      "title": "Free Tax Protest",
+      "category": "Client Property-Tax Platform",
+      "summary": "A client property-tax compensation platform serving Denton and Tarrant county workflows, with a large-scale ETL pipeline and a migration to FastAPI and React underway.",
+      "highlights": [
+        "2026 (ongoing): Automating ETL for 20 raw files (50+ GB, 8.4M+ records, 500+ columns), converting to Parquet/JSONL with DuckDB and loading type-cast data into PostgreSQL. A run now completes in about 6 minutes, with further optimization in progress.",
+        "2026 (ongoing): Migrating the app to FastAPI (Python) and React.js (TypeScript), learning Python and FastAPI along the way: schema design, custom cookie-based authentication, RBAC, and admin/user features.",
+        "2025: Dockerized the app and migrated the Laravel Blade/Vue.js admin panel to a Laravel REST API with a React.js (TypeScript) frontend.",
+        "2025: Moved file storage to Amazon S3, integrated SendGrid SMTP, tested email flows with Mailtrap, and migrated 70+ email templates to dynamic templates.",
+        "2025: Adapted the architecture for Denton and Tarrant county workflows and implemented OAuth SSO (Laravel Passport) for user/admin switching."
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Laravel",
+        "FastAPI",
+        "DuckDB",
+        "PostgreSQL",
+        "Docker",
+        "AWS S3",
+        "SendGrid",
+        "Laravel Passport"
+      ],
+      "live_url": "https://freetaxprotest.com",
+      "period": "2025 - 2026",
+      "is_featured": true
+    },
+    {
+      "slug": "lead-intake-workflow",
+      "title": "Lead Intake Workflow",
+      "category": "Lead Management App",
+      "summary": "A Dockerized Next.js app with Supabase and Airtable, featuring advanced lead filtering.",
+      "highlights": [],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "Airtable",
+        "Docker"
+      ],
+      "live_url": "https://duskbyteapps.com/lead-intake-workflow",
+      "period": null,
+      "is_featured": true
+    },
+    {
+      "slug": "db-monitoring-tool",
+      "title": "DB Monitoring Tool",
+      "category": "Proof of Concept",
+      "summary": "Studied the monitoring architecture and built a Go agent to the requirements (AI-assisted), processing time-series data with InfluxDB and showing charts, graphs, and tables in React dashboards.",
+      "highlights": [],
+      "technologies": [
+        "Go",
+        "InfluxDB",
+        "React",
+        "TypeScript"
+      ],
+      "live_url": null,
+      "period": null,
+      "is_featured": false
+    },
+    {
+      "slug": "itwin-ai",
+      "title": "Itwin.ai",
+      "category": "AI Short-Form Video Platform",
+      "summary": "A platform that generates TikTok-style reels from prompts and publishes them to social channels.",
+      "highlights": [
+        "Built and deployed a Laravel and Vue.js (TypeScript) platform; Dockerized it during a Laravel upgrade.",
+        "Integrated GPT-generated search queries with Pexels, Shotstack (video editing), HeyGen (text-to-speech), and Instagram/YouTube/Facebook publishing APIs."
+      ],
+      "technologies": [
+        "Laravel",
+        "Vue.js",
+        "TypeScript",
+        "OpenAI",
+        "Shotstack",
+        "HeyGen",
+        "Docker"
+      ],
+      "live_url": "https://itwin.duskbyteapps.com",
+      "period": null,
+      "is_featured": false
+    },
+    {
+      "slug": "beatmyticket",
+      "title": "BeatMyTicket",
+      "category": "Vehicle Challan Management",
+      "summary": "Challan management powered by the Gemini API, with Zoho CRM for leads and Stripe for payments.",
+      "highlights": [],
+      "technologies": [
+        "Gemini API",
+        "Zoho CRM",
+        "Stripe"
+      ],
+      "live_url": "https://ticketresolver.com",
+      "period": null,
+      "is_featured": false
+    },
+    {
+      "slug": "performant-365-cre",
+      "title": "Performant 365 CRE",
+      "category": "Roster & Subscription Platform",
+      "summary": "Microsoft login, roster management built with the service-repository pattern, and Braintree subscriptions.",
+      "highlights": [],
+      "technologies": [
+        "Laravel",
+        "Microsoft Login",
+        "Braintree"
+      ],
+      "live_url": "https://365cre.com",
+      "period": null,
+      "is_featured": false
+    }
+  ],
+  "skill_categories": [
+    {
+      "id": 1,
+      "name": "Frontend & JavaScript",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Next.js",
+        "Vue.js"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Backend & APIs",
+      "skills": [
+        "REST APIs",
+        "Laravel",
+        "PHP",
+        "Python/FastAPI (learning)",
+        "Swagger"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Databases",
+      "skills": [
+        "MySQL",
+        "PostgreSQL",
+        "DuckDB",
+        "Supabase"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Auth & Security",
+      "skills": [
+        "OAuth/SSO (Laravel Passport)",
+        "Cookie-based auth",
+        "RBAC"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "DevOps & Cloud",
+      "skills": [
+        "Docker",
+        "Linux server deployment (SSH)",
+        "Git",
+        "AWS S3"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Testing",
+      "skills": [
+        "Postman",
+        "Mailtrap"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Integrations",
+      "skills": [
+        "OpenAI GPT",
+        "Gemini",
+        "Stripe",
+        "Braintree",
+        "Zoho CRM",
+        "SendGrid",
+        "YouTube/Facebook/Instagram APIs"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Interpersonal",
+      "skills": [
+        "Mentoring",
+        "Communication",
+        "Team collaboration",
+        "Problem-solving",
+        "Ownership"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "id": 1,
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "institution": "Chandigarh Group of Colleges, Landran",
+      "started_on": "2019-08-01",
+      "ended_on": "2022-08-31",
+      "grade": "GPA 7.77"
+    }
+  ]
+}

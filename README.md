@@ -46,3 +46,14 @@ API on Render (Docker, SQLite, seeded on every start), frontend on Vercel.
 5. Optional: ping `https://portfolio-api.onrender.com/up` every 10 minutes (UptimeRobot) to avoid cold starts.
 
 Contact messages live in SQLite on an ephemeral disk, so they are lost on restart.
+
+## Instant first load
+
+The frontend ships with a snapshot of the portfolio data (`frontend/src/features/portfolio/data/portfolioSnapshot.json`), so the page renders immediately even while the free Render API is asleep. The live API response replaces it in the background.
+
+After changing seeders or content, refresh the snapshot with the API running:
+
+    cd frontend
+    npm run snapshot
+
+Use `VITE_API_URL=https://portfolio-api-dp00.onrender.com/api/v1 npm run snapshot` to export from the live API.

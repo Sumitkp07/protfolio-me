@@ -8,7 +8,7 @@ import { HERO_FACTS } from '@/features/hero/constants'
 import { CodeCard } from '@/features/hero/components/CodeCard'
 import { useProfile, useSkillCategories } from '@/features/portfolio/hooks/usePortfolioSections'
 
-const heroStack = ['React.js', 'Next.js', 'TypeScript', 'Laravel', 'PostgreSQL', 'Docker']
+const heroStack = ['JavaScript', 'TypeScript', 'React.js', 'Next.js', 'REST APIs', 'PostgreSQL']
 
 export const Hero = () => {
   const profile = useProfile()

@@ -13,9 +13,9 @@ class ProfileSeeder extends Seeder
             ['email' => 'sumitkp.dev@gmail.com'],
             [
                 'name' => 'Sumit Kumar',
-                'title' => 'Full Stack Developer',
-                'tagline' => 'I build and ship production web platforms, from database design to Docker deployment.',
-                'summary' => 'Full Stack Developer with about 2 years of experience at Duskbyte, building and deploying production web applications with React.js, Next.js (TypeScript), Laravel, and PostgreSQL. Delivered projects end to end, from architecture and database design to Docker-based deployment, with experience in REST APIs, authentication, ETL pipelines, and third-party and AI API integrations.',
+                'title' => 'MERN Stack Developer',
+                'tagline' => 'I build fast, type-safe React and Next.js applications on top of REST APIs, and ship them to production.',
+                'summary' => 'MERN-focused Full Stack Developer with about 2 years of experience at Duskbyte, building and deploying production web applications with JavaScript, TypeScript, React.js and Next.js. I design REST APIs and back them with Laravel, PostgreSQL and MySQL, and I have shipped Docker-based deployments, authentication and RBAC, ETL pipelines, and third-party and AI API integrations end to end.',
                 'phone' => '+91 9050755520',
                 'location' => 'Mohali, Punjab, India',
                 'github_url' => 'https://github.com/Sumitkp07',
