@@ -10,11 +10,12 @@ class ProfileSeeder extends Seeder
     public function run(): void
     {
         Profile::query()->updateOrCreate(
-            ['email' => 'sumitkp.dev@gmail.com'],
+            ['name' => 'Sumit Kumar'],
             [
                 'name' => 'Sumit Kumar',
+                'email' => 'sumitkp333777@gmail.com',
                 'title' => 'MERN Stack Developer',
-                'tagline' => 'I build fast, type-safe React and Next.js applications on top of REST APIs, and ship them to production.',
+                'tagline' => 'Two years of building and deploying production React, Next.js and Laravel applications, from database design to Docker deployment.',
                 'summary' => 'MERN-focused Full Stack Developer with about 2 years of experience at Duskbyte, building and deploying production web applications with JavaScript, TypeScript, React.js and Next.js. I design REST APIs and back them with Laravel, PostgreSQL and MySQL, and I have shipped Docker-based deployments, authentication and RBAC, ETL pipelines, and third-party and AI API integrations end to end.',
                 'phone' => '+91 9050755520',
                 'location' => 'Mohali, Punjab, India',

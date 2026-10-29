@@ -21,9 +21,9 @@ export const Projects = () => {
   return (
     <Section
       id="projects"
-      eyebrow="Projects"
-      title="Things I've shipped."
-      description="Client platforms, internal tools and AI products running in production."
+      eyebrow="Selected work"
+      title="Work I've shipped to production."
+      description="What I built, the stack behind it, and where you can see it running."
     >
       <Reveal className="mb-8 flex gap-2">
         {filters.map((item) => (

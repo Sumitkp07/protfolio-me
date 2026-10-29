@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Mail } from 'lucide-react'
+import { ArrowDown, Download, Mail } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/shared/components/BrandIcons'
 import { Button } from '@/shared/components/Button'
 import { Container } from '@/shared/components/Container'
@@ -32,7 +32,7 @@ export const Hero = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
             </span>
-            {profile.years_experience}+ years shipping production apps
+            Open to MERN and full stack roles
           </motion.p>
 
           <motion.h1
@@ -64,8 +64,13 @@ export const Hero = () => {
             <Button href="#projects">
               View my work <ArrowDown size={16} />
             </Button>
+            {profile.resume_url && (
+              <Button href={profile.resume_url} variant="ghost" download>
+                <Download size={16} /> Resume
+              </Button>
+            )}
             <Button href="#contact" variant="ghost">
-              <Mail size={16} /> Get in touch
+              <Mail size={16} /> Contact me
             </Button>
             {profile.github_url && (
               <Button href={profile.github_url} variant="ghost" target="_blank" rel="noreferrer" aria-label="GitHub">

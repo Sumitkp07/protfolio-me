@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { SpotlightCard } from '@/shared/components/SpotlightCard'
 import { Tag } from '@/shared/components/Tag'
 import { cn } from '@/shared/utils/cn'
+import { displayHost } from '@/shared/utils/url'
 import type { Project } from '@/features/portfolio/types/portfolio'
 
 interface ProjectCardProps {
@@ -11,7 +12,7 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(project.is_featured)
   const hasHighlights = project.highlights.length > 0
 
   return (
@@ -29,10 +30,12 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             href={project.live_url}
             target="_blank"
             rel="noreferrer"
-            aria-label={`Open ${project.title}`}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line/10 text-muted transition-all hover:border-accent hover:bg-brand hover:text-onbrand"
+            aria-label={`Open ${project.title} live site`}
+            className="inline-flex shrink-0 items-center gap-2 rounded-full border border-line/15 px-3.5 py-2 text-xs font-medium text-ink transition-all hover:border-accent hover:bg-brand hover:text-onbrand"
           >
-            <ArrowUpRight size={18} />
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+            {displayHost(project.live_url)}
+            <ArrowUpRight size={14} />
           </a>
         )}
       </div>

@@ -28,8 +28,8 @@ class ProjectSeeder extends Seeder
             [
                 'slug' => 'free-tax-protest',
                 'title' => 'Free Tax Protest',
-                'category' => 'Client Property-Tax Platform',
-                'summary' => 'A client property-tax compensation platform serving Denton and Tarrant county workflows, with a large-scale ETL pipeline and a migration to FastAPI and React underway.',
+                'category' => 'Property-Tax Compensation Platform',
+                'summary' => 'A property-tax compensation platform serving Denton and Tarrant county workflows, with a large-scale ETL pipeline and a migration to FastAPI and React underway.',
                 'highlights' => [
                     '2026 (ongoing): Automating ETL for 20 raw files (50+ GB, 8.4M+ records, 500+ columns), converting to Parquet/JSONL with DuckDB and loading type-cast data into PostgreSQL. A run now completes in about 6 minutes, with further optimization in progress.',
                     '2026 (ongoing): Migrating the app to FastAPI (Python) and React.js (TypeScript), learning Python and FastAPI along the way: schema design, custom cookie-based authentication, RBAC, and admin/user features.',

@@ -9,8 +9,8 @@ export const Experience = () => {
     <Section
       id="experience"
       eyebrow="Experience"
-      title="Where I've been building."
-      description="From a React trainee to owning production platforms."
+      title="Professional experience."
+      description="From React trainee to full stack developer owning production platforms."
     >
       <div className="relative space-y-6">
         <span className="absolute bottom-4 left-[7px] top-4 w-px bg-gradient-to-b from-accent via-line/20 to-transparent" />
